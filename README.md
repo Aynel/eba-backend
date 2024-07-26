@@ -64,6 +64,19 @@ $ npm run test:cov
 npm install --save @nestjs/typeorm typeorm pg
 ```
 
+# Nginx config
+
+Configurar Nginx (Servidor Web) para usar un solo puerto para frontend y backend
+
+```bash
+# Instalar Nginx
+sudo apt update && sudo apt install nginx -y
+# Configurar
+sudo cp ./.nginx/default.conf /etc/nginx/sites-enabled/default
+sudo nginx -t
+sudo nginx -s reload
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
